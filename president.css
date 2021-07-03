@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+h1{
+    margin: 50px 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+.parent{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+.daughter{
+    width: 50%;
+    padding: 0;
+    text-align: center;
+}
+.daughter img{
+    width: 450px;
+}
+.son{
+    width: 50%;
+    padding: 0 5%;
+    box-sizing: border-box;
+    text-align: justify;
+    line-height: 1.7;
+}
+/* -----------------Media Queries-------------- */
+
+
+
+/* -----------------desktop and laptops-------------- */
+
+@media (min-width: 1024px){
+    h1{
+        color: green;
+    }
+    .parent p{
+        color: red;
+        word-spacing: 20px;
+
+    }
+}
+
+/* -----------------Tablets and iPads-------------- */
+
+@media(min-width: 769px) and (max-width:1023px){
+ h1{
+     text-transform: uppercase;
+ }
+ p{
+     color: blue;
+     word-spacing: 10px;
+ }
+}
+
+/* -----------------Mobile Phones-------------- */
+@media (max-width: 768px){
+    h1{
+        color: #3498db;
+    }
+    .parent{
+       display: block;
+    }
+    .daughter{
+        width: 100%;
+    }
+    .son{
+        width: 100%;
+    }
+    .daughter img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-width: 637px){
+    .daughter img{
+        padding: 10%;
+        box-sizing: border-box;
+    }
+}
