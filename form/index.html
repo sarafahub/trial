@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./002.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./jquery-ui.min.css">
+    <link rel="stylesheet" href="./form.css">
+
+</head>
+
+<body>
+    <section class="mt-4 text-center text-secondary">
+        <a href="../index.html"><img src="./002.jpg" alt="" width="140px"></a>
+        <h1 class="my-3">New Registration Form</h1>
+        <hr class="w-50 m-auto" />
+        <h2 class="my-3">Bio-Data</h2>
+    </section>
+
+    <form action="./userinfo.php" method="post">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Name:</label>
+                        <input type="text" name="name" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12`">
+                    <div class="form-group">
+                        <label for="">Father Name:</label>
+                        <input type="text" name="father" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">CNIC No:</label>
+                        <input type="text" name="cnic" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Postal Address:</label>
+                        <input type="text" name="address" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Date of Birth:</label>
+                        <input type="text" name="dob" id="dob" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Phone No:</label>
+                        <input type="text" name="fonum" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Blood Group:</label>
+                        <input type="text" name="blood" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Office Address:</label>
+                        <input type="text" name="offaddress" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Email Address:</label>
+                        <input type="text" name="email" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">Gender:</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="sex">
+                        <option selected>Choose...</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Other</option>
+                    </select>
+                </div>
+            </div>
+            <section class="mt-4 text-center text-secondary">
+                <!-- <img src="./002.jpg" alt="" width="140px"> -->
+                <!-- <h1 class="my-3">New Registration Form</h1> -->
+                <hr class="w-50 m-auto" />
+                <h2 class="my-3">Acadmic Information</h2>
+                <hr class="w-50 m-auto mb-5" />
+            </section>
+
+
+
+            <!-- <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Submit Form</button>
+                </div> -->
+
+
+
+        </div>
+        </div>
+
+
+
+
+        <!-- Acadmeic Information Starts from Here -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Marks in Matric:</label>
+                        <input type="text" name="matric" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Upload Certificate:</label>
+                        <input type="file" name="cert1" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12`">
+                    <div class="form-group">
+                        <label for="">Marks in Intermediate:</label>
+                        <input type="text" name="inter" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Upload Certificate:</label>
+                        <input type="file" name="cert2" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Marks in Graduation:</label>
+                        <input type="text" name="graduation" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Upload Certificate:</label>
+                        <input type="file" name="cert3" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Marks in LL.B:</label>
+                        <input type="text" name="llb" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Upload Certificate:</label>
+                        <input type="file" name="cert4" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Other Degree (if any):</label>
+                        <input type="text" name="other" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Upload Certificate:</label>
+                        <input type="file" name="cert5" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Punjab Bar Membership No:</label>
+                        <input type="text" name="pbar" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Upload Card:</label>
+                        <input type="file" name="cert6" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">I.T.P Registration Number:</label>
+                        <input type="text" name="itp" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Upload Card:</label>
+                        <input type="file" name="cert6" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                
+              
+
+
+
+
+
+
+               
+
+
+
+            </div>
+        </div>
+
+        <section class="mt-4 text-center text-secondary">
+            <!-- <img src="./002.jpg" alt="" width="140px">
+            <h1 class="my-3">New Registration Form</h1> -->
+            <hr class="w-50 m-auto" />
+            <h2 class="my-3">Reference Information</h2>
+            
+            <hr class="w-50 m-auto" />
+            <h4 class="mt-5">Reference No. 01</h4>
+        </section>
+        
+        <!-- <button class="btn btn-success text-center">Submit Form</button> -->
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Name of Lawyer / Consultant:</label>
+                        <input type="text" name="adv1" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12`">
+                    <div class="form-group">
+                        <label for="">MTBA Registration No:</label>
+                        <input type="text" name="reg1" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Office Contact No:</label>
+                        <input type="text" name="contact1" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Phone NO::</label>
+                        <input type="text" name="fone1" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <section class="mt-4 text-center text-secondary">
+            <!-- <img src="./002.jpg" alt="" width="140px">
+            <h1 class="my-3">New Registration Form</h1> -->
+            <!-- <hr class="w-50 m-auto" /> -->
+            <!-- <h2 class="my-3">Reference Information</h2> -->
+            <h4 class="mt-5">Reference No. 02</h4>
+            <!-- <hr class="w-50 m-auto" /> -->
+        </section>
+        <!-- <button class="btn btn-success text-center">Submit Form</button> -->
+
+        <div class="container mt-5">
+            <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Name of Lawyer / Consultant:</label>
+                        <input type="text" name="adv2" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12`">
+                    <div class="form-group">
+                        <label for="">MTBA Registration No:</label>
+                        <input type="text" name="reg2" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Office Contact No:</label>
+                        <input type="text" name="contact2" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                        <label for="">Phone NO::</label>
+                        <input type="text" name="fone2" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+
+
+
+
+
+               
+
+
+
+            </div>
+        </div>
+
+        <div class="col-12 text-center mb-5">
+                    <button type="submit" class="btn btn-primary">Submit Form</button>
+                </div>
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+
+
+    <script>
+        // $(document).ready(function() {
+        //     $("#dob").datepicker({
+        //         dateFormat: "DD dd MM, yy",
+        //         changeMonth: "true",
+        //         changeYear: "true"
+        //     });
+        // });
+
+        $(document).ready(function() {
+            $("#dob").datepicker({
+                dateFormat: "dd-mm-yy",
+                changeMonth: "true",
+                changeYear: "true",
+                yearRange: "1901:2025",
+                duration: "slow",
+            });
+        });
+    </script>
+</body>
+
+</html>
