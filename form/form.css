@@ -10,10 +10,14 @@ h1{
     text-shadow: 2px 2px 4px #000000;
 }
 
-span{
+/* span{
     align-items: center!important;
-}
+} */
 li>a:hover{
-    background-color: goldenrod;
-    border-radius: 10%;
+    background-color: rgba(32, 218, 187, 0.377);
+    border-radius: 15px;
+    transition: 1s ease all;
+}
+a{
+    font-family: 'Merriweather', serif;
 }
