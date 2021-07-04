@@ -13,3 +13,7 @@ h1{
 span{
     align-items: center!important;
 }
+li>a:hover{
+    background-color: goldenrod;
+    border-radius: 10%;
+}
