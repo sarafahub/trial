@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+  li>a:hover{
+      background-color: goldenrod;
+      border-radius: 10%;
+
+  }
+  li>a:hover{
+    background-color: rgba(32, 218, 187, 0.377);
+    border-radius: 50px;
+    transition: 1s ease all;
+    /* transform: rotate(360deg); */
+    /* transform: translate(20px, 10px); */
+    /* transform: skew(-5deg, -5deg); */
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+
+a{
+  text-decoration: none;
+  color: white;
+}
