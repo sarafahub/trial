@@ -19,11 +19,19 @@
     /* transform: skew(-5deg, -5deg); */
     transform: scale(1.1);
 }
-
+div>a{
+ 
+    padding: 5px;
+    border-radius: 30px;
+    background-color:khaki;
+    text-decoration: none;
+}
 div>a:hover{
   padding: 5px;
   border-radius: 30px;
-  background-color:khaki;
+  background-color:rgba(45, 66, 255, 0.582);
+  color: white;
+  /* transform: scale(1.2); */
   font-size: 18px;
   text-decoration: none;
 }
