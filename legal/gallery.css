@@ -20,6 +20,11 @@
     transform: scale(1.1);
 }
 
+a:hover{
+  background-color:khaki;
+  transform: scale(1.1);
+}
+
 @media only screen and (max-width: 600px) {
   .flex-container {
     flex-direction: column;
