@@ -20,9 +20,12 @@
     transform: scale(1.1);
 }
 
-a:hover{
+div>a:hover{
+  padding: 5px;
+  border-radius: 30px;
   background-color:khaki;
-  transform: scale(1.1);
+  font-size: 18px;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
